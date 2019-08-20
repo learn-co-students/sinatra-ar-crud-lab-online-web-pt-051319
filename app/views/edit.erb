@@ -1,5 +1,5 @@
 <form action="/articles/<%= @article.id %> method="POST">
-    <input type="hidden" name="_method" value="patch">
+    <input type="hidden" name="_method" value="PATCH">
     <ul>
         <li>
         <input id="title" type="text" name="article[title]" value="<%= @article.title %>" />

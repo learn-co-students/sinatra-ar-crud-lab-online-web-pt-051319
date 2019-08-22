@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    <h1>Posts</h1>
-    <% @articles.each do |info| %>
-      <strong><%= info.name %></strong><br />
-      <%= info.content %>
-      <br /><br />
-    <% end %>
-  </body>
-</html>
+<ul>
+<% @articles.each do |article| %>
+  <li>
+    <a href="/articles/<%= article.id %>">
+      <%= article.title %>
+    </a>
+  </li>
+<% end %>
+</ul>

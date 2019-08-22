@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    <h1>Posts</h1>
-    <% @articles.each do |info| %>
-      <strong><%= info.name %></strong><br />
-      <%= info.content %>
-      <br /><br />
-    <% end %>
-  </body>
-</html>
+<form action="/articles" method="post">
+  <ul>
+    <li>
+      <label for="title">Title</label>
+      <input id="title" type="text" name="title" />
+    </li>
+    <li>
+      <label for="content">Content</label>
+      <textarea id="content" type="text" name="content">
+      </textarea>
+    </li>
+  </ul>
+  <input type="submit" />
+</form>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+</head>
+<body>
+	<h1>Here are the articles</h1>
+	<% @articles.each.with_index(1) do |article, i| %>
+		<h2><%= i %>: <%= article.title %></h2>
+	<% end %>
+</body>
+</html>
